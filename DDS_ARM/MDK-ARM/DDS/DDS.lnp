@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dds\startup_stm32f103x6.o"
+"dds\main.o"
+"dds\gpio.o"
+"dds\stm32f1xx_it.o"
+"dds\stm32f1xx_hal_msp.o"
+"dds\delay.o"
+"dds\stm32f1xx_hal_gpio_ex.o"
+"dds\stm32f1xx_hal_tim.o"
+"dds\stm32f1xx_hal_tim_ex.o"
+"dds\stm32f1xx_hal.o"
+"dds\stm32f1xx_hal_rcc.o"
+"dds\stm32f1xx_hal_rcc_ex.o"
+"dds\stm32f1xx_hal_gpio.o"
+"dds\stm32f1xx_hal_dma.o"
+"dds\stm32f1xx_hal_cortex.o"
+"dds\stm32f1xx_hal_pwr.o"
+"dds\stm32f1xx_hal_flash.o"
+"dds\stm32f1xx_hal_flash_ex.o"
+"dds\stm32f1xx_hal_exti.o"
+"dds\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DDS\DDS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DDS.map" -o DDS\DDS.axf
